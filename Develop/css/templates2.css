@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 div#content{
-	margin: 0 auto;
+//	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -53,11 +53,13 @@ div.container {
 }
 div.itemBox {
 	position: relative;
+	height:100%;
 }
 div.container .item {
+	height:100%;
 	float: left;
 	text-align: center;
-	background-color: #f5f5f5;
+	background-color: #000;
 }
 
 .moving {
