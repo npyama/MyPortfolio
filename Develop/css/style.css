@@ -149,74 +149,7 @@ nav h3{
 	詳細 - explain
 *******************************************************/
 
-#explain{
-	width:400px;
-	height:150px;
-	z-index:75;
-	background-color:#000;
-	opacity:0.8;
-	position:absolute;
-	bottom:150px;
-	right:0px;
-	padding:50px 50px 100px 30px;
-	margin:0px;
-}
 
-#explain h1{
-	color:#FFF;
-	font-size: 30px;
-	font-weight:2000;
-	letter-spacing: 1px;
-	margin:0px;
-	padding:0px;
-}
-
-#explain h2{
-	color:#FFF;
-	font-size: 18px;
-	font-weight:200;
-	letter-spacing: 1px;
-	margin-top:60px;
-	padding:0px;
-}
-
-#explain h3{
-	color:#FFF;
-	font-size: 16px;
-	font-weight:200;
-	letter-spacing: 1px;
-	padding:0px;
-}
-
-
-#explain h4{
-	color:#FFF;
-	font-size: 16px;
-	font-weight:200;
-	letter-spacing: 1px;
-	padding:0px;
-}
-
-
-#explain p{
-	color:#FFF;
-	font-size: 14px;
-	font-weight:200;
-	letter-spacing: 1px;
-	padding:0px;
-}
-
-#explainbox01{
-	display:block;
-	}
-
-#explainbox02{
-	display:none;
-	}
-
-#explainbox03{
-	display:none;
-	}
 
 
 /*******************************************************
