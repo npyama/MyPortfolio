@@ -205,6 +205,7 @@ nav h3{
 	background-color:#000;
 	opacity:0.7;
 	position:absolute;
+	display:none;
 	bottom:20%;
 	right:0px;
 	padding:3% 10% 7% 5%;
@@ -255,15 +256,15 @@ nav h3{
 	padding:0px;
 }
 
-#explainbox01{
-	display:block;
-	}
-
-#explainbox02{
+#explain #no01{
 	display:none;
 	}
 
-#explainbox03{
+#explain #no02{
+	display:none;
+	}
+
+#explain #no03{
 	display:none;
 	}
 

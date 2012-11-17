@@ -71,6 +71,36 @@ $("#bg").toggle(function () {
 });
 
 
+$("#bg").toggle(function () {
+	$("#explain").css("display", "block")
+	},function () {
+	$("#explain").css("display", "none");
+});
+
+/*
+
+$("#bg #no01").toggle(function () {
+	$("#explain #no01").css("display", "block")
+	},function () {
+	$("#explain #no01").css("display", "none");
+});
+
+
+$("#bg #no02").toggle(function () {
+	$("#explain #no02").css("display", "block")
+	},function () {
+	$("#explain #no02").css("display", "none");
+});
+
+
+$("#bg #no03").toggle(function () {
+	$("#explain #no03").css("display", "block")
+	},function () {
+	$("#explain #no03").css("display", "none");
+});
+
+*/
+
 
 	
 });
