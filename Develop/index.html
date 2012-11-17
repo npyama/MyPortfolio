@@ -12,7 +12,9 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.mobile-1.1.0.min.js"></script>
-<script src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/flipsnap.js"></script>
+<script type="text/javascript" src="scripts/flipsnap.min.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
 
 </head>
 <body>
@@ -100,13 +102,13 @@
 	Background
 ----------------------------------------------->
 
-<div id="content">
+<div id="bg">
 
-	<div class="container">
-    
-			<div id="content01">
-				<img src="images/gallery/01.png" alt="">
-			</div>
+	<div id="viewport">
+    <div class="flipsnap">
+			<div class="item"><img src="images/gallery/01.png" alt=""></div>
+			<div class="item"><img src="images/gallery/01.png" alt=""></div>
+			<div class="item"><img src="images/gallery/01.png" alt=""></div>
 <!--            
 			<div id="content02">
 				<img src="images/gallery/02.png" alt="">
@@ -116,7 +118,7 @@
 			<img src="images/gallery/03.png" alt="">
 		</div>
 -->
-	
+	</div>
 	</div>
 </div><!--end - contect-->
 
