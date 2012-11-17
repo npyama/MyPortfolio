@@ -29,6 +29,14 @@ $("li").toggle(
 
 
 
+//1000ミリ秒の遅延を設定しているのはページの読込が完了するまでの十分な時間として設定してます。
+setTimeout(function(){  window.scrollTo(0,1);},1000);
+ 
+//jQueryなどだとページ読込み完了時に呼んでやるのもありです。
+$(function(){
+window.scrollTo(0,1);
+});
+
 
 
 	
