@@ -1,7 +1,6 @@
 $(function(){
 
 
-
 //URLバー隠し
 setTimeout(function(){  window.scrollTo(0,1);},1000); 
 $(function(){
@@ -18,6 +17,29 @@ $(function(){
 
 
 
+//カスタムスクロールバー
+/*
+(function($){
+	$(document).ready(function(){
+		$("#nav_thumb").mCustomScrollbar();
+	});
+})(jQuery);
+*/
+
+(function($){
+    $(window).load(function(){
+      $("#nav_thumb").mCustomScrollbar();
+      $("div[rel='with-custom-scrollbar']").mCustomScrollbar({
+        autoDraggerLength:false
+      });
+      $("#content-1").mCustomScrollbar({
+        mouseWheel:false,
+        scrollButtons:{
+          enable:true
+        }
+      });
+    });
+  })(jQuery);
 
 
 
@@ -46,12 +68,12 @@ $(function(){
 
 
 $("li").toggle(
-  function () {
-    $(this).css("list-style-type", "disc")
-           .css("color", "blue");
-  },function () {
-    $(this).css({"list-style-type":"", "color":""});
-  });
+	function () {
+	$(this).css("list-style-type", "disc")
+		.css("color", "blue");
+	},function () {
+	$(this).css({"list-style-type":"", "color":""});
+});
 
 	
 });

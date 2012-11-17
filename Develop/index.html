@@ -10,80 +10,96 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.1.0.min.css">
 <link rel="stylesheet" type="text/css" href="css/import2.css" >
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
 <script type="text/javascript" src="scripts/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.mobile-1.1.0.min.js"></script>
 <script type="text/javascript" src="scripts/flipsnap.js"></script>
 <script type="text/javascript" src="scripts/flipsnap.min.js"></script>
 <script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
 
 </head>
 <body>
 
 
+<!----------------------------------------------
+	nav
+----------------------------------------------->
+
 <nav>
 	<div id="title">
-	  	<a href="#aboutme">
+		<a href="#aboutme">
 			<h1>Daisuke&nbsp;Nishiyama</h1>
 			<h2>My&nbsp;Portfolio</h2>
-  		</a>
+		</a>
 	</div>
 
-		
-    <div id="scrollbox">
-    	<ul id="thumb">
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/01_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/02_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/03_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/01_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/02_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/03_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/01_thumb.png" alt=""></a>
-            </li>
-    		<li>
-	            <a href="#" id="01"><img src="images/gallery/02_thumb.png" alt=""></a>
-            </li>
-		</ul>
-    </div>
+	
 
+
+<div id="nav_thumb">
+	<div id="container">
+			<div class="item"><img src="images/gallery/01_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/02_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/03_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/01_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/02_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/03_thumb.png" alt=""></div>
+	</div>
+</div><!--end - nav_thumb-->
+
+    
+    
+    	
+<!--
+<div id="nav_thumb">
+	<div id="viewport">
+	<div class="flipsnap">
+
+			<div class="item"><img src="images/gallery/01_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/02_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/03_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/01_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/02_thumb.png" alt=""></div>
+			<div class="item"><img src="images/gallery/03_thumb.png" alt=""></div>
+
+		</div><!-- end flipsnap -->
+	</div><!-- end viewport -->
+</div><!--end - nav_thumb-->
+-->
 	
     <h3>(C)2012&nbsp;Daisuke&nbsp;Nishiyama</h3>
 </nav>
 
 
-<article id="explain">
 
-	
+
+<!----------------------------------------------
+	Explain
+----------------------------------------------->
+
+<article id="explain">	
+
+
 	<div id="explainbox01">
 		<h1>HicthHike Me ! </h1>
 		<p>ドライバーとヒッチハイカーのマッチングサービスアプリ</p>
 		
 		<h2>Android Application</h2>
-   		<h3>URL</h3>
-    	<h4>UI設計 デザイン フロントエンド開発</h4>
-  	</div><!-- end ecplainbox_01 -->
-    
+		<h3>URL</h3>
+		<h4>UI設計 デザイン フロントエンド開発</h4>
+	</div><!-- end ecplainbox_01 -->
+
 	<div id="explainbox02">
 		<h1>CF@NNCT</h1>
 		<p>長岡工業高等専門学校高志祭、Cosplay Festivalの告知ポスター。アニメイト新潟店様、メロンブックス新潟店様、ガタケットショップ様にて掲示して頂き、
         学外からも沢山のコスプレイヤーの方々にお越し頂けた。</p>
 		
 		<h2>ポスター</h2>
-   		<h3></h3>
-    	<h4>デザイン イラスト制作 企画</h4>
-  	</div><!-- end ecplainbox_02 -->
+		<h3></h3>
+		<h4>デザイン イラスト制作 企画</h4>
+	</div><!-- end ecplainbox_02 -->
 
 
 	<div id="explainbox03">
@@ -91,10 +107,10 @@
 		<p>ドライバーとヒッチハイカーのマッチングサービスアプリ</p>
 		
 		<h2>Android Application</h2>
-   		<h3>URL</h3>
-    	<h4>UI設計 デザイン フロントエンド開発</h4>
-  	</div><!-- end ecplainbox_03 -->
-    
+		<h3>URL</h3>
+		<h4>UI設計 デザイン フロントエンド開発</h4>
+	</div><!-- end ecplainbox_03 -->
+
 </article>
 
 
@@ -103,24 +119,16 @@
 ----------------------------------------------->
 
 <div id="bg">
-
 	<div id="viewport">
-    <div class="flipsnap">
+		<div class="flipsnap">
+
 			<div class="item"><img src="images/gallery/01.png" alt=""></div>
-			<div class="item"><img src="images/gallery/01.png" alt=""></div>
-			<div class="item"><img src="images/gallery/01.png" alt=""></div>
-<!--            
-			<div id="content02">
-				<img src="images/gallery/02.png" alt="">
-			</div>
-			
-        <div id="content03">
-			<img src="images/gallery/03.png" alt="">
-		</div>
--->
-	</div>
-	</div>
-</div><!--end - contect-->
+			<div class="item"><img src="images/gallery/02.png" alt=""></div>
+			<div class="item"><img src="images/gallery/03.png" alt=""></div>
+
+		</div><!-- end flipsnap -->
+	</div><!-- end viewport -->
+</div><!--end - bg-->
 
 
 
