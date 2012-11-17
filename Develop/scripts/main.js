@@ -45,17 +45,14 @@ $(function(){
 
 
 
-
-
-
-	$("#nav_prev_arrow").hover(function() {
-		$("#nav_box").animate(
-		{ 
-		paddingTop: "100px",
-		paddingBottom: "0px",
-		}
-		, 1500 );
+//nav,explain表示
+/*	
+	$("#bg").onclick(function() {
+	$(this).css("display", "dis")
+			.css("color", "blue");
 	});
+	
+	
 	$("#nav_next_arrow").hover(function() {
 		$("#nav_box").animate(
 		{ 
@@ -64,16 +61,16 @@ $(function(){
 		}
 		, 1500 );
 	});
+*/
 
 
-
-$("li").toggle(
-	function () {
-	$(this).css("list-style-type", "disc")
-		.css("color", "blue");
+$("#bg").toggle(function () {
+	$("nav").css("display", "block")
 	},function () {
-	$(this).css({"list-style-type":"", "color":""});
+	$("nav").css("display", "none");
 });
+
+
 
 	
 });
