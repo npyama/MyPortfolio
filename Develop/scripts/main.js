@@ -38,19 +38,20 @@ flipsnap.element.addEventListener('fsmoveend', function() {
 }, false);
 
 
+//nav_thumb リンク
+$('#nav_thumb #no01').click(function() {
+    flipsnap.moveToPoint(0);
+});
 
+$('#nav_thumb #no02').click(function() {
+    flipsnap.moveToPoint(1);
+});
 
-
+$('#nav_thumb #no03').click(function() {
+    flipsnap.moveToPoint(2);
+});
 
 //カスタムスクロールバー
-/*
-(function($){
-	$(document).ready(function(){
-		$("#nav_thumb").mCustomScrollbar();
-	});
-})(jQuery);
-*/
-
 (function($){
     $(window).load(function(){
       $("#nav_thumb").mCustomScrollbar();
