@@ -66,29 +66,25 @@ $('#nav_thumb #no03').click(function() {
 /****************************************
 	nav,explain表示
 ****************************************/
-/*
 $("#bg").toggle(function () {
-	$("nav").css("display", "block")
-	},function () {
-	$("nav").css("display", "none");
-});
-
-
-$("#bg").toggle(function () {
-	$("#explain").css("display", "block")
-	},function () {
-	$("#explain").css("display", "none");
-});
-*/
-
-
-
-
-
-$("#bg").click(function(){
 	$("nav").animate({ 
 	left: "0%"
-	}, { duration:400, easing: 'easeInOutQuint', });
+	}, { duration:300, easing: 'easeInOutQuint', });
+	},function () {
+	$("nav").animate({ 
+	left: "-20%"
+	}, { duration:300, easing: 'easeInOutQuint', });
+});
+
+
+$("#bg").toggle(function () {
+	$("#explain").animate({ 
+	right: "0%"
+	}, { duration:300, easing: 'easeInOutQuint', });
+	},function () {
+	$("#explain").animate({ 
+	right: "-55%"
+	}, { duration:300, easing: 'easeInOutQuint', });
 });
 
 

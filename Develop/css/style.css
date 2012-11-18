@@ -205,9 +205,9 @@ nav h3{
 	background-color:#000;
 	opacity:0.7;
 	position:absolute;
-	display:none;
+//	display:none;
 	bottom:20%;
-	right:0%;
+	right:-55%;
 	padding:3% 10% 7% 5%;
 	margin:0px;
 }
