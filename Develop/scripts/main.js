@@ -46,27 +46,30 @@ $('#nav_thumb #no03').click(function() {
 /****************************************
 	カスタムスクロールバー
 ****************************************/
-(function($){
+/*(function($){
     $(window).load(function(){
       $("#nav_thumb").mCustomScrollbar();
       $("div[rel='with-custom-scrollbar']").mCustomScrollbar({
         autoDraggerLength:false
       });
-      $("#content-1").mCustomScrollbar({
-        mouseWheel:false,
+      $("#nav_thumb-1").mCustomScrollbar({
+        mouseWheel:true,
         scrollButtons:{
           enable:true
         }
       });
     });
   })(jQuery);
+*/
 
-
+$(window).load(function() {
+    $("#mcs_container").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes");
+});
 
 /****************************************
 	nav,explain表示
 ****************************************/
-$("#bg").toggle(function () {
+$("#icon_tag").toggle(function () {
 	$("nav").animate({ 
 	left: "0%"
 	}, { duration:300, easing: 'easeInOutQuint', });
@@ -78,7 +81,7 @@ $("#bg").toggle(function () {
 
 
 $("#bg").toggle(function () {
-    $("#explain").fadeIn(100, function() { });
+    $("#explain").show(1, function() { });
 	$("#explain").animate({ 
 	right: "0%"
 	}, { duration:300, easing: 'easeInOutQuint', });
@@ -86,7 +89,7 @@ $("#bg").toggle(function () {
 	$("#explain").animate({ 
 	right: "-55%"
 	}, { duration:300, easing: 'easeInOutQuint', });
-    $("#explain").fadeOut(200, function() { });
+    $("#explain").hide(1, function() { });
 
 });
 
@@ -97,11 +100,11 @@ $("#bg").toggle(function () {
 ****************************************/
 
 $("#title").click(function() {
-    $("#modal").fadeIn(200);
+    $("#modal").fadeIn(150);
 });
 
 $("#modal_close").click(function() {
-    $("#modal").fadeOut(200, function() {
+    $("#modal").fadeOut(250, function() {
     });
 
 });
