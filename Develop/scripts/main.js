@@ -46,7 +46,7 @@ $('#nav_thumb #no03').click(function() {
 /****************************************
 	カスタムスクロールバー
 ****************************************/
-/*(function($){
+(function($){
     $(window).load(function(){
       $("#nav_thumb").mCustomScrollbar();
       $("div[rel='with-custom-scrollbar']").mCustomScrollbar({
@@ -60,11 +60,30 @@ $('#nav_thumb #no03').click(function() {
       });
     });
   })(jQuery);
-*/
 
+
+(function($){
+    $(window).load(function(){
+      $(".content_1").mCustomScrollbar();
+      $("div[rel='with-custom-scrollbar']").mCustomScrollbar({
+        autoDraggerLength:false
+      });
+      $(".content_1").mCustomScrollbar({
+        mouseWheel:true,
+        scrollButtons:{
+          enable:true
+        }
+      });
+    });
+  })(jQuery);
+
+
+
+/*
 $(window).load(function() {
     $("#mcs_container").mCustomScrollbar("vertical",400,"easeOutCirc",1.05,"auto","yes");
 });
+*/
 
 /****************************************
 	nav,explain表示
