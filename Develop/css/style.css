@@ -57,10 +57,10 @@ nav{
 	opacity:0.8;
 	position:absolute;
 	top:0px;
-	left:0px;
+	left:-20%;
 	padding:0px;
 	margin:0px;
-	display:none;
+//	display:none;
 }
 
 nav h1{
@@ -207,7 +207,7 @@ nav h3{
 	position:absolute;
 	display:none;
 	bottom:20%;
-	right:0px;
+	right:0%;
 	padding:3% 10% 7% 5%;
 	margin:0px;
 }
