@@ -212,6 +212,8 @@ nav h3{
 	margin:0px;
 }
 
+
+
 #explain h1{
 	color:#FFF;
 	font-size: 30px;
@@ -256,17 +258,29 @@ nav h3{
 	padding:0px;
 }
 
+
+
 #explain #no01{
-	display:none;
+//		position:absolute;
+//		right:10px;
+//		top:30px;
+		opacity:0;
 	}
 
 #explain #no02{
-	display:none;
+//		position:absolute;
+//		right:10px;
+//		top:30px;
+		opacity:0;
 	}
 
 #explain #no03{
-	display:none;
+//		position:absolute;
+//		right:10px;
+//		top:30px;
+		opacity:0;
 	}
+
 
 
 /*******************************************************

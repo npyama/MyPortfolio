@@ -9,9 +9,24 @@ $(function(){
 
 
 //フリック
+/*
 (function () {
 	Flipsnap('#bg .flipsnap');
 })(); 
+*/
+
+var $pointer = $('#explain div');
+var flipsnap = Flipsnap('.flipsnap');
+
+flipsnap.element.addEventListener('fsmoveend', function() {
+    $pointer.filter('.current').removeClass('current');
+    $pointer.eq(flipsnap.currentPoint).addClass('current');
+    $("#explain div").css("opacity", "0");
+    $("#explain .current").css("opacity", "1");
+}, false);
+
+
+
 
 
 
@@ -62,7 +77,6 @@ $(function(){
 		, 1500 );
 	});
 */
-
 
 $("#bg").toggle(function () {
 	$("nav").css("display", "block")
