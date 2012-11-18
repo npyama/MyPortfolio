@@ -15,6 +15,7 @@ $(function(){
 })(); 
 */
 
+/*
 var $pointer = $('#explain div');
 var flipsnap = Flipsnap('.flipsnap');
 
@@ -24,8 +25,17 @@ flipsnap.element.addEventListener('fsmoveend', function() {
     $("#explain div").css("opacity", "0");
     $("#explain .current").css("opacity", "1");
 }, false);
+*/
 
+var $pointer = $('#explain div');
+var flipsnap = Flipsnap('.flipsnap');
 
+flipsnap.element.addEventListener('fsmoveend', function() {
+    $pointer.filter('.current').css("opacity","0");
+    $pointer.filter('.current').removeClass('current');
+    $pointer.eq(flipsnap.currentPoint).addClass('current');
+    $pointer.eq(flipsnap.currentPoint).css("opacity","1");
+}, false);
 
 
 
