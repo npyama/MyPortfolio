@@ -78,6 +78,7 @@ $("#bg").toggle(function () {
 
 
 $("#bg").toggle(function () {
+    $("#explain").fadeIn(100, function() { });
 	$("#explain").animate({ 
 	right: "0%"
 	}, { duration:300, easing: 'easeInOutQuint', });
@@ -85,6 +86,24 @@ $("#bg").toggle(function () {
 	$("#explain").animate({ 
 	right: "-55%"
 	}, { duration:300, easing: 'easeInOutQuint', });
+    $("#explain").fadeOut(200, function() { });
+
+});
+
+
+
+/****************************************
+	modalwindow表示
+****************************************/
+
+$("#title").click(function() {
+    $("#modal").fadeIn(200);
+});
+
+$("#modal_close").click(function() {
+    $("#modal").fadeOut(200, function() {
+    });
+
 });
 
 

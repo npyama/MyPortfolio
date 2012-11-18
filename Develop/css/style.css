@@ -10,14 +10,16 @@
 body {
 	background:#000;
 	width:100%;
-//	height:100%;
+	height:100%;
+	overflow:hidden;
+	
 }
 
 h1, h2, h3, h4, h5, h6 {
 	color:#FFF;
 	font-size: 14px;
 	letter-spacing: 1px;
-	text-shadow:rgba(0, 0, 0, 0.50) 0 1px 1px;
+	text-shadow:rgba(0, 0, 0, 1) 0 1px -1px;
 	margin:0px;
 	padding:0px;
 }
@@ -33,16 +35,140 @@ a {
 	transition: all 1s ease-out;
 }
 
-
-#overlay {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	opacity: 0.3;
-	z-index:99;
+.clearfix:after {
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	content:".";
 }
+.clearfix {
+	min-height: 1px;
+}
+* html .clearfix {
+	height: 1px;
+	/*¥*//*/ 
+	height: auto;
+	overflow: hidden;
+   /**/
+}
+
+/*******************************************************
+	modal window 
+*******************************************************/
+
+#modal {
+	height:500px;
+	width:810px;
+	margin:0 auto;
+	z-index:90;
+	position:absolute;
+	display:none;
+	top:10%;
+	right:12%;
+	background: #000000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #000000 0%, #161616 21%, #3f3f3f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(21%,#161616), color-stop(100%,#3f3f3f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #000000 0%,#161616 21%,#3f3f3f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #000000 0%,#161616 21%,#3f3f3f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #000000 0%,#161616 21%,#3f3f3f 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #000000 0%,#161616 21%,#3f3f3f 100%); /* W3C */
+	zfilter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3f3f3f',GradientType=0 ); /* IE6-9 */
+	opacity:0.9;
+	border-radius:15px;
+	border: 2px solid rgba(0,0,0,1);
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);
+
+}
+
+#modal h1{
+	color:#FFF;
+	font-size: 48px;
+	font-weight:900;
+	letter-spacing: 1px;
+	padding:0;
+	display:inline;
+}
+
+#modal h2{
+	color:#FFF;
+	font-size: 24px;
+	font-weight:600;
+	letter-spacing: 1px;
+	vertical-align:8px; 
+	padding-left:20px;
+	//padding:0;
+	display:inline;
+}
+
+#modal h3{
+	color:#FFF;
+	font-size: 16px;
+	font-weight:500;
+	letter-spacing: 1px;
+	padding:30px 0px 20px;
+}
+
+#modal h4{
+	color:#FFF;
+	font-size: 16px;
+	font-weight:500;
+	letter-spacing: 1px;
+	padding:0px;
+}
+
+#modal p{
+	color:#FFF;
+	font-size: 12px;
+	font-weight:500;
+	letter-spacing: 1px;
+	margin-top:10px;
+	padding:0px;
+}
+
+#modal_close{
+	position:absolute;
+	top:-15px;
+	right:-15px;
+}
+
+
+#modal_nav{
+	height:500px;
+	width:160px;	
+	float:left;
+	border-radius:15px;
+}
+
+#modal_nav img{
+	margin:175px 0px 10px 40px;
+
+}
+
+
+#modal_con{
+	height:470px;
+	width:550px;
+	float:left;
+	border-radius:15px;
+	padding:40px 70px 0px 30px;
+}
+
+#modal_p{
+	margin:30px 0px 20px 0px;
+	padding:0px;
+}
+
+#modal_con img{
+//	width:100%;
+//	height:100%;
+	margin:0;
+	padding:20px 10px;
+	display:inline;
+}
+
+	
+
 
 
 /*******************************************************
@@ -50,10 +176,18 @@ a {
 *******************************************************/
 
 nav{
-	width:20%;
+	width:18%;
 	height:100%;
 	z-index:50;
-	background-color:#000;
+	background: #000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #333333 0%, #161616 79%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(79%,#161616), color-stop(100%,#000000)); /* 	Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #333333 0%,#161616 79%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #333333 0%,#161616 79%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #333333 0%,#161616 79%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #333333 0%,#161616 79%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);
 	opacity:0.8;
 	position:absolute;
 	top:0px;
@@ -102,8 +236,6 @@ nav h3{
 }
 
 
-
-
 #nav_thumb {
 	width:100%;
 	height:500px;
@@ -136,58 +268,8 @@ nav h3{
 	margin:0;
 	padding:0;
 	z-index:90;
-    border: 2px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
-
-
-/******************************
-フリック用
-
-
-#nav_thumb {
-	width:100%;
-	margin:auto;
-	z-index:10;
-}
-
-#nav_thumb #viewport {
-	margin: 0 auto;
-//    overflow: hidden;
-    overflow: auto;
-    padding: 0;
-    width: 151pzx;
-	height: 500px;
-}
-
-
-#nav_thumb .flipsnap {
-    padding: 0;
-	width:151px;
-    height: 770px;
-}
-
-
-#nav_thumb .item {
-    border: medium none;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    width: auto;
-	//float: left;
-}
-
-
-#nav_thumb img{
-	//width:100%;
-	//height:100%;
-	margin:0;
-	padding:0;
-	z-index:90;
-    border: 2px solid rgba(255, 255, 255, 1);
-}
-
-*********************/
-
 
 
 
@@ -202,8 +284,16 @@ nav h3{
 	width:38%;
 	height:25%;
 	z-index:75;
-	background-color:#000;
-	opacity:0.7;
+	background: #000; /* Old browsers */
+	background: -moz-linear-gradient(top,  #333333 0%, #161616 79%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(79%,#161616), color-stop(100%,#000000)); /* 	Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #333333 0%,#161616 79%,#000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #333333 0%,#161616 79%,#000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #333333 0%,#161616 79%,#000000 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #333333 0%,#161616 79%,#000000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);
+	opacity:0.8;
 	position:absolute;
 //	display:none;
 	bottom:20%;
