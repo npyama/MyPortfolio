@@ -138,12 +138,27 @@ $("#bg").toggle(function () {
 ****************************************/
 
 $("#toaboutme").click(function() {
-    $("#modal").fadeIn(210);
+
+ 	$(this).animate({ 
+	opacity: "0.3"
+	}, { duration:200, easing: 'linear', });
+	$("#modal").fadeIn(210);	
+	$(this).animate({ 
+	opacity: "1"
+	}, { duration:200, easing: 'linear', });
+
+
 });
 
 $("#modal_close").click(function() {
-    $("#modal").fadeOut(250, function() {
-    });
+ 	$(this).animate({ 
+	opacity: "0.3"
+	}, { duration:200, easing: 'linear', });
+	$(this).animate({ 
+	opacity: "1"
+	}, { duration:200, easing: 'linear', });
+    $("#modal").fadeOut(250, function() {});
+
 
 });
 
@@ -154,10 +169,15 @@ $("#modal_close").click(function() {
 ****************************************/
 
 $("#toindex").click(function() {
-   $("#index").show(1, function() { });
+ 	$(this).animate({ 
+	opacity: "0.3"
+	}, { duration:200, easing: 'linear', });
    $("#index_thumb_01").show(1, function() { });
    $("#index_thumb_02").show(1, function() { });
    $("#index_thumb_03").show(1, function() { });
+	$(this).animate({ 
+	opacity: "1"
+	}, { duration:200, easing: 'linear', });   $("#index").show(1, function() { });
 
 
 	$("#index").animate({ 
@@ -182,6 +202,15 @@ $("#toindex").click(function() {
 
 
 $("#index img").click(function() {
+
+ 	$(this).animate({ 
+	opacity: "0.3"
+	}, { duration:200, easing: 'linear', });
+	
+	$(this).animate({ 
+	opacity: "1"
+	}, { duration:200, easing: 'linear', });   $("#index").show(1, function() { });
+
     $("#index").animate({ 
 	top: "-80%"
 	}, { duration:300, easing: 'easeInOutQuint', });

@@ -302,8 +302,18 @@ nav h3{
 
 #toindex{
 	background-image:url(../images/icon_index_fl.png);	
+	opacity:1;
 }
 
+#toaboutme{
+	background-image:url(../images/icon_aboutme_fl.png);	
+	opacity:1;
+}
+
+#tocontact{
+	background-image:url(../images/icon_contact_fl.png);	
+	opacity:1;
+}
 
 
 /*******************************************************
