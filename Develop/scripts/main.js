@@ -45,32 +45,45 @@ $('#nav_thumb img').click(function() {
 /****************************************
 	nav_thumb index_thumb リンク
 ****************************************/
-$('#nav_thumb #no01').click(function() {
-    flipsnap.moveToPoint(0);
+$('#nav_thumb #no01').click(function() { flipsnap.moveToPoint(0); });
+$('#nav_thumb #no02').click(function() { flipsnap.moveToPoint(1); });
+$('#nav_thumb #no03').click(function() { flipsnap.moveToPoint(2); });
+$('#nav_thumb #no04').click(function() { flipsnap.moveToPoint(3); });
+$('#nav_thumb #no05').click(function() { flipsnap.moveToPoint(4); });
+$('#nav_thumb #no06').click(function() { flipsnap.moveToPoint(5); });
+$('#nav_thumb #no07').click(function() { flipsnap.moveToPoint(6); });
+$('#nav_thumb #no08').click(function() { flipsnap.moveToPoint(7); });
+$('#nav_thumb #no09').click(function() { flipsnap.moveToPoint(8); });
+$('#nav_thumb #no10').click(function() { flipsnap.moveToPoint(9); });
+$('#nav_thumb #no11').click(function() { flipsnap.moveToPoint(10); });
+$('#nav_thumb #no12').click(function() { flipsnap.moveToPoint(11); });
+$('#nav_thumb #no13').click(function() { flipsnap.moveToPoint(12); });
+$('#nav_thumb #no14').click(function() { flipsnap.moveToPoint(13); });
+$('#nav_thumb #no15').click(function() { flipsnap.moveToPoint(14); });
+$('#nav_thumb #no16').click(function() { flipsnap.moveToPoint(15); });
+$('#nav_thumb #no17').click(function() { flipsnap.moveToPoint(16); });
 
-});
+$('#index_thumb #no01').click(function() { flipsnap.moveToPoint(0); });
+$('#index_thumb #no02').click(function() { flipsnap.moveToPoint(1); });
+$('#index_thumb #no03').click(function() { flipsnap.moveToPoint(2); });
+$('#index_thumb #no04').click(function() { flipsnap.moveToPoint(3); });
+$('#index_thumb #no05').click(function() { flipsnap.moveToPoint(4); });
+$('#index_thumb #no06').click(function() { flipsnap.moveToPoint(5); });
+$('#index_thumb #no07').click(function() { flipsnap.moveToPoint(6); });
+$('#index_thumb #no08').click(function() { flipsnap.moveToPoint(7); });
+$('#index_thumb #no09').click(function() { flipsnap.moveToPoint(8); });
+$('#index_thumb #no10').click(function() { flipsnap.moveToPoint(9); });
+$('#index_thumb #no11').click(function() { flipsnap.moveToPoint(10); });
+$('#index_thumb #no12').click(function() { flipsnap.moveToPoint(11); });
+$('#index_thumb #no13').click(function() { flipsnap.moveToPoint(12); });
+$('#index_thumb #no14').click(function() { flipsnap.moveToPoint(13); });
+$('#index_thumb #no15').click(function() { flipsnap.moveToPoint(14); });
+$('#index_thumb #no16').click(function() { flipsnap.moveToPoint(15); });
+$('#index_thumb #no17').click(function() { flipsnap.moveToPoint(16); });
 
-$('#nav_thumb #no02').click(function() {
-    flipsnap.moveToPoint(1);
-});
-
-$('#nav_thumb #no03').click(function() {
-    flipsnap.moveToPoint(2);
-});
 
 
 
-$('#index #no01').click(function() {
-    flipsnap.moveToPoint(0);
-});
-
-$('#index #no02').click(function() {
-    flipsnap.moveToPoint(1);
-});
-
-$('#index #no03').click(function() {
-    flipsnap.moveToPoint(2);
-});
 
 
 
@@ -212,28 +225,28 @@ $("#index img").click(function() {
 	}, { duration:200, easing: 'linear', });   $("#index").show(1, function() { });
 
     $("#index").animate({ 
-	top: "-80%"
+	top: "-90%"
 	}, { duration:300, easing: 'easeInOutQuint', });
 
 	$("#index_thumb_01").animate({ 
 	marginLeft: "100%"
-	}, { duration:500, easing: 'easeInOutQuint', });
+	}, { duration:300, easing: 'easeInOutQuint', });
 	$("#index_thumb_02").animate({ 
 	marginLeft: "100%"
-	}, { duration:400, easing: 'easeInOutQuint', });
+	}, { duration:300, easing: 'easeInOutQuint', });
 	$("#index_thumb_03").animate({ 
 	marginLeft: "100%"
 	}, { duration:300, easing: 'easeInOutQuint', });
 
-   $("#index_thumb_01").hide(1, function() { });
-   $("#index_thumb_02").hide(1, function() { });
-   $("#index_thumb_03").hide(1, function() { });
-   $("#index").hide(200, function() { });
-
-
+   $("#index_thumb_01").hide(500, function() { });
+   $("#index_thumb_02").hide(500, function() { });
+   $("#index_thumb_03").hide(500, function() { });
+   $("#index").hide(500, function() { });
 
 
 });
+
+
 
 
 

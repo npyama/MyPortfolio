@@ -4,7 +4,7 @@
 
 @charset "utf-8";
 * {
-  font-family: Century Gothic,"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"MSPゴシック","MS PGothic",Sans-Serif;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ","Meiryo",verdana,Century Gothic,"MSPゴシック","MS PGothic",Sans-Serif;
 }
 
 body {
@@ -52,6 +52,7 @@ a {
 	overflow: hidden;
    /**/
 }
+
 
 /*******************************************************
 	modal window 
@@ -322,7 +323,7 @@ nav h3{
 
 #index{
 	width:80%;
-	height:65%;
+	height:75%;
 	z-index:75;
 	background: #000; /* Old browsers */
 	background: -moz-linear-gradient(top,  #333333 0%, #161616 79%, #000000 100%); /* FF3.6+ */
@@ -337,7 +338,7 @@ nav h3{
 	border-radius:0 0 15px 15px;
 	opacity:0.9;
 	position:absolute;
-	top:-80%;
+	top:-90%;
 	left:5%;
 	padding:5%;
 	margin:0px;
@@ -471,7 +472,7 @@ hr {
 
 #explain{
 	width:38%;
-	height:25%;
+	height:30%;
 	z-index:70;
 	background: #000; /* Old browsers */
 	background: -moz-linear-gradient(top,  #333333 0%, #161616 79%, #000000 100%); /* FF3.6+ */
@@ -501,6 +502,7 @@ hr {
 	letter-spacing: 1px;
 	margin:0%;
 	padding:0%;
+	font-stretch:extra-condensed;
 }
 
 #explain h2{
@@ -564,6 +566,118 @@ hr {
 		opacity:0;
 	}
 
+#explain #no04{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no05{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no06{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no07{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no08{
+		position:absolute;
+		right:10%;
+		top:10%;
+		width:80%;
+		opacity:0;
+	}
+
+#explain #no09{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no10{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no11{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no12{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no13{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no14{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no15{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+#explain #no16{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
+
+
+#explain #no17{
+		position:absolute;
+		right:20%;
+		top:10%;
+		width:70%;
+		opacity:0;
+	}
 
 
 /*******************************************************
@@ -587,7 +701,8 @@ hr {
 
 #bg .flipsnap {
     padding: 0;
-    width: 3072px;
+	height:768px;
+    width: 17408px;
 }
 
 
