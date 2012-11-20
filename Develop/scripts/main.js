@@ -26,11 +26,28 @@ flipsnap.element.addEventListener('fsmoveend', function() {
 
 
 
+
 /****************************************
-	nav_thumb リンク
+	タップ判定
+****************************************/
+$('#nav_thumb img').click(function() {
+	$(this).animate({ 
+	opacity: "0.3"
+	}, { duration:200, easing: 'linear', });
+	$(this).animate({ 
+	opacity: "1"
+	}, { duration:200, easing: 'linear', });
+
+});
+
+
+
+/****************************************
+	nav_thumb index_thumb リンク
 ****************************************/
 $('#nav_thumb #no01').click(function() {
     flipsnap.moveToPoint(0);
+
 });
 
 $('#nav_thumb #no02').click(function() {
@@ -40,6 +57,21 @@ $('#nav_thumb #no02').click(function() {
 $('#nav_thumb #no03').click(function() {
     flipsnap.moveToPoint(2);
 });
+
+
+
+$('#index #no01').click(function() {
+    flipsnap.moveToPoint(0);
+});
+
+$('#index #no02').click(function() {
+    flipsnap.moveToPoint(1);
+});
+
+$('#index #no03').click(function() {
+    flipsnap.moveToPoint(2);
+});
+
 
 
 
@@ -61,21 +93,6 @@ $('#nav_thumb #no03').click(function() {
     });
   })(jQuery);
 
-
-(function($){
-    $(window).load(function(){
-      $(".content_1").mCustomScrollbar();
-      $("div[rel='with-custom-scrollbar']").mCustomScrollbar({
-        autoDraggerLength:false
-      });
-      $(".content_1").mCustomScrollbar({
-        mouseWheel:true,
-        scrollButtons:{
-          enable:true
-        }
-      });
-    });
-  })(jQuery);
 
 
 
@@ -114,12 +131,14 @@ $("#bg").toggle(function () {
 
 
 
+
+
 /****************************************
 	modalwindow表示
 ****************************************/
 
-$("#title").click(function() {
-    $("#modal").fadeIn(150);
+$("#toaboutme").click(function() {
+    $("#modal").fadeIn(210);
 });
 
 $("#modal_close").click(function() {
@@ -127,6 +146,67 @@ $("#modal_close").click(function() {
     });
 
 });
+
+
+
+/****************************************
+	index表示
+****************************************/
+
+$("#toindex").click(function() {
+   $("#index").show(1, function() { });
+   $("#index_thumb_01").show(1, function() { });
+   $("#index_thumb_02").show(1, function() { });
+   $("#index_thumb_03").show(1, function() { });
+
+
+	$("#index").animate({ 
+	top: "0%"
+	}, { duration:300, easing: 'easeInOutQuint', });
+
+	$("#index_thumb_01").animate({ 
+	marginLeft: "0%"
+	}, { duration:500, easing: 'easeInOutQuint', });
+	$("#index_thumb_02").animate({ 
+	marginLeft: "0%"
+	}, { duration:550, easing: 'easeInOutQuint', });
+	$("#index_thumb_03").animate({ 
+	marginLeft: "0%"
+	}, { duration:600, easing: 'easeInOutQuint', });
+
+
+
+});
+
+
+
+
+$("#index img").click(function() {
+    $("#index").animate({ 
+	top: "-80%"
+	}, { duration:300, easing: 'easeInOutQuint', });
+
+	$("#index_thumb_01").animate({ 
+	marginLeft: "100%"
+	}, { duration:500, easing: 'easeInOutQuint', });
+	$("#index_thumb_02").animate({ 
+	marginLeft: "100%"
+	}, { duration:400, easing: 'easeInOutQuint', });
+	$("#index_thumb_03").animate({ 
+	marginLeft: "100%"
+	}, { duration:300, easing: 'easeInOutQuint', });
+
+   $("#index_thumb_01").hide(1, function() { });
+   $("#index_thumb_02").hide(1, function() { });
+   $("#index_thumb_03").hide(1, function() { });
+   $("#index").hide(200, function() { });
+
+
+
+
+});
+
+
 
 
 
