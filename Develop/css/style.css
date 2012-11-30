@@ -468,7 +468,7 @@ hr {
 
 #contact{
 	width:50%;
-	height:75%;
+	height:80%;
 	z-index:72;
 	background: #000; /* Old browsers */
 	background: -moz-linear-gradient(top,  #333333 0%, #161616 79%, #000000 100%); /* FF3.6+ */
@@ -483,7 +483,7 @@ hr {
 	border-radius:0 0 15px 15px;
 	opacity:0.9;
 	position:absolute;
-	bottom:-93%;
+	bottom:-100%;
 	right:8%;
 	padding:5%;
 	margin:0px;
@@ -608,12 +608,13 @@ label{
 	padding:7px;
 	border:none;
 	border-radius:1px;
-	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);	
+	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);
 }
 
 #contact-message{
 	font-size:11px;
 	width:100%;
+	height:180px;
 	margin-top:5px;
 	margin-left:10px;
 	padding:7px;
@@ -622,7 +623,12 @@ label{
 	box-shadow: 0px 0px 3px 2px rgba(0,0,0,0.4);	
 }
 
+#formsubmit{
+	margin:5px 50% 0 0;
+	pading:0px;
+	background-image:url(../images/icon_submit.png)
 
+}
 
 
 

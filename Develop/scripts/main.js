@@ -274,7 +274,7 @@ $("#contact img").click(function() {
 	}, { duration:200, easing: 'linear', });   $("#index").show(1, function() { });
 
     $("#contact").animate({ 
-	bottom: "-90%"
+	bottom: "-100%"
 	}, { duration:300, easing: 'easeInOutQuint', });
    $("#contact").hide(500, function() { });
 
