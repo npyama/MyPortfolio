@@ -453,12 +453,11 @@ hr {
 }
 
 #indexarrow img{
-	width:62px;
-	margin-top:-20px;
-	padding-left:610px;
-	float:left;
+	position:absolute;
+	top:-1.5%;
+	right:-1.5%;
+	width:120px;
 	border:none;
-	display:inline;
 }
 
 
@@ -470,7 +469,7 @@ hr {
 #contact{
 	width:50%;
 	height:75%;
-	z-index:92;
+	z-index:72;
 	background: #000; /* Old browsers */
 	background: -moz-linear-gradient(top,  #333333 0%, #161616 79%, #000000 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#333333), color-stop(79%,#161616), color-stop(100%,#000000)); /* 	Chrome,Safari4+ */
@@ -529,7 +528,22 @@ hr {
 	float:left;
 }
 
+#contactarrow{
+	width:100%;
+	margin:0;
+	padding:0;
 
+}
+
+#contactarrow img{
+	position:absolute;
+	top:0px;
+	right:0%;
+	width:120px;
+	border:none;
+}
+
+/*
 #contactarrow{
 	width:100%;
 	margin:0;
@@ -546,13 +560,6 @@ hr {
 	display:inline;	
 }
 
-/*
-.input-block{
-	color:#FFF;
-	font-size:14px;
-	width:100%;
-	margin-top:20px;
-}
 */
 
 label{
