@@ -19,7 +19,8 @@
 <script type="text/javascript" src="scripts/flipsnap.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
-<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript" src="scripts/main.js" media="screen and (max-width: 1024px)"></script>
+<!--<script type="text/javascript" src="scripts/main_large.js" media="screen and (min-width: 1025px)"></script>-->
 </head>
 <body>
 
@@ -46,7 +47,7 @@
     	京都の大学にてエンジニアリングを軸にデザインやマネジメントを学ぶ学生。
 	</p>
     <p>
-		DTPを始め、グラフィックデザイン、イラストレーション、Webデザイン、
+		WEBデザインをはじめ、DTP、グラフィックデザイン、イラストレーション、
 		GUIデザインまで、多岐に渡って活動域を広げている。
 		「デザインのできるエンジニア」になるべく日々奮闘中。
 	</p>
@@ -68,49 +69,97 @@
 </section>
 
 
-
 <!----------------------------------------------
-	nav
+	web_nav
 ----------------------------------------------->
 
-<nav>
-	<div id="title">
+<nav id="nav_web">
+	<div class="title">
 		<h1>Daisuke&nbsp;Nishiyama</h1>
 		<h2>My&nbsp;Portfolio</h2>
 	</div>
 
-	<div id="nav_thumb">
-		<div id="no01"><img src="images/gallery/web01t.png" alt=""></div>
-		<div id="no02"><img src="images/gallery/web02t.png" alt=""></div>
-		<div id="no03"><img src="images/gallery/web03t.png" alt=""></div>
-		<div id="no04"><img src="images/gallery/web04t.png" alt=""></div>
-		<div id="no05"><img src="images/gallery/web05t.png" alt=""></div>
-		<div id="no06"><img src="images/gallery/dtp01t.png" alt=""></div>
-		<div id="no07"><img src="images/gallery/dtp02t.png" alt=""></div>
-		<div id="no08"><img src="images/gallery/dtp03t.png" alt=""></div>
-		<div id="no09"><img src="images/gallery/dtp04t.png" alt=""></div>
-		<div id="no10"><img src="images/gallery/dtp05t.png" alt=""></div>
-		<div id="no11"><img src="images/gallery/dtp08t.png" alt=""></div>
-		<div id="no12"><img src="images/gallery/dtp06t.png" alt=""></div>
-		<div id="no13"><img src="images/gallery/dtp07t.png" alt=""></div>
-		<div id="no14"><img src="images/gallery/illust01t.png" alt=""></div>	
-        <div id="no15"><img src="images/gallery/illust02t.png" alt=""></div>
-		<div id="no16"><img src="images/gallery/illust03t.png" alt=""></div>
-		<div id="no17"><img src="images/gallery/illust04t.png" alt=""></div>
+	<div class="nav_thumb">
+		<div class="nav_thumb_top"></div>
+        <div class="no01"><img src="images/gallery/web01t.png" alt=""></div>
+		<div class="no02"><img src="images/gallery/web02t.png" alt=""></div>
+		<div class="no03"><img src="images/gallery/web03t.png" alt=""></div>
+		<div class="no04"><img src="images/gallery/web04t.png" alt=""></div>
+		<div class="no05"><img src="images/gallery/web05t.png" alt=""></div>
+		<div class="no06"><img src="images/gallery/dtp01t.png" alt=""></div>
+		<div class="no07"><img src="images/gallery/dtp02t.png" alt=""></div>
+		<div class="no08"><img src="images/gallery/dtp03t.png" alt=""></div>
+		<div class="no09"><img src="images/gallery/dtp04t.png" alt=""></div>
+		<div class="no10"><img src="images/gallery/dtp05t.png" alt=""></div>
+		<div class="no11"><img src="images/gallery/dtp08t.png" alt=""></div>
+		<div class="no12"><img src="images/gallery/dtp06t.png" alt=""></div>
+		<div class="no13"><img src="images/gallery/dtp07t.png" alt=""></div>
+		<div class="no14"><img src="images/gallery/illust01t.png" alt=""></div>	
+        <div class="no15"><img src="images/gallery/illust02t.png" alt=""></div>
+		<div class="no16"><img src="images/gallery/illust03t.png" alt=""></div>
+		<div class="no17"><img src="images/gallery/illust04t.png" alt=""></div>
+		<div class="nav_thumb_bottom"></div>
 	</div><!--end - nav_thumb-->
 
-	<div id="iconlist">
-		<div id="toindex"><img src="images/icon_index.png" alt="Index"></div>	
-		<div id="toaboutme"><img src="images/icon_aboutme.png" alt="AboutMe"></div>
-		<div id="tocontact"><img src="images/icon_contact.png" alt="ContactMe"></div>
+	<div class="iconlist">
+		<div class="toindex"><img src="images/icon_index.png" alt="Index"></div>	
+		<div class="toaboutme"><img src="images/icon_aboutme.png" alt="AboutMe"></div>
+		<div class="tocontact"><img src="images/icon_contact.png" alt="ContactMe"></div>
 	</div><!--end - iconlist-->
 	<div style="clear:both;"></div>
 
 
     <h3>(C)2012&nbsp;Daisuke&nbsp;Nishiyama</h3>
-	<img src="images/icon_tag.png" alt="" id="icon_tag">
+	<img src="images/icon_tag.png" alt="" class="icon_tag">
 </nav>
+<div id="nav_area"></div>
 
+
+
+
+<!----------------------------------------------
+	Tablet_nav
+----------------------------------------------->
+
+<nav id="nav_tablet">
+		<div class="title">
+		<h1>Daisuke&nbsp;Nishiyama</h1>
+		<h2>My&nbsp;Portfolio</h2>
+	</div>
+
+	<div class="nav_thumb">
+		<div class="nav_thumb_top"></div>
+        <div class="no01"><img src="images/gallery/web01t.png" alt=""></div>
+		<div class="no02"><img src="images/gallery/web02t.png" alt=""></div>
+		<div class="no03"><img src="images/gallery/web03t.png" alt=""></div>
+		<div class="no04"><img src="images/gallery/web04t.png" alt=""></div>
+		<div class="no05"><img src="images/gallery/web05t.png" alt=""></div>
+		<div class="no06"><img src="images/gallery/dtp01t.png" alt=""></div>
+		<div class="no07"><img src="images/gallery/dtp02t.png" alt=""></div>
+		<div class="no08"><img src="images/gallery/dtp03t.png" alt=""></div>
+		<div class="no09"><img src="images/gallery/dtp04t.png" alt=""></div>
+		<div class="no10"><img src="images/gallery/dtp05t.png" alt=""></div>
+		<div class="no11"><img src="images/gallery/dtp08t.png" alt=""></div>
+		<div class="no12"><img src="images/gallery/dtp06t.png" alt=""></div>
+		<div class="no13"><img src="images/gallery/dtp07t.png" alt=""></div>
+		<div class="no14"><img src="images/gallery/illust01t.png" alt=""></div>	
+        <div class="no15"><img src="images/gallery/illust02t.png" alt=""></div>
+		<div class="no16"><img src="images/gallery/illust03t.png" alt=""></div>
+		<div class="no17"><img src="images/gallery/illust04t.png" alt=""></div>
+		<div class="nav_thumb_bottom"></div>
+	</div><!--end - nav_thumb-->
+
+	<div class="iconlist">
+		<div class="toindex"><img src="images/icon_index.png" alt="Index"></div>	
+		<div class="toaboutme"><img src="images/icon_aboutme.png" alt="AboutMe"></div>
+		<div class="tocontact"><img src="images/icon_contact.png" alt="ContactMe"></div>
+	</div><!--end - iconlist-->
+	<div style="clear:both;"></div>
+
+
+    <h3>(C)2012&nbsp;Daisuke&nbsp;Nishiyama</h3>
+	<img src="images/icon_tag.png" alt="" class="icon_tag">
+</nav>
 
 
 
